@@ -1,5 +1,5 @@
 import XCTest
-@testable import ViaLinkSDK
+@testable import ViaLinkCore
 
 final class ViaLinkSDKTests: XCTestCase {
 

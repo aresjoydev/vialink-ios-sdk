@@ -2,25 +2,25 @@
 import PackageDescription
 
 let package = Package(
-    name: "ViaLinkSDK",
+    name: "ViaLinkCore",
     platforms: [
         .iOS(.v15),
         .macOS(.v12)  // swift build (macOS) 호환용
     ],
     products: [
         .library(
-            name: "ViaLinkSDK",
+            name: "ViaLinkCore",
             type: .dynamic,
-            targets: ["ViaLinkSDK"]
+            targets: ["ViaLinkCore"]
         ),
     ],
     targets: [
         .target(
-            name: "ViaLinkSDK"
+            name: "ViaLinkCore"
         ),
         .testTarget(
-            name: "ViaLinkSDKTests",
-            dependencies: ["ViaLinkSDK"]
+            name: "ViaLinkCoreTests",
+            dependencies: ["ViaLinkCore"]
         ),
     ]
 )

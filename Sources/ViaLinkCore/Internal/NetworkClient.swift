@@ -26,7 +26,7 @@ final class NetworkClient: @unchecked Sendable {
         var request = URLRequest(url: url)
         request.setValue(apiKey, forHTTPHeaderField: "X-API-Key")
         request.setValue("application/json", forHTTPHeaderField: "Accept")
-        request.setValue("ViaLinkSDK/1.0.5 iOS", forHTTPHeaderField: "User-Agent")
+        request.setValue("ViaLinkSDK/1.0.6 iOS", forHTTPHeaderField: "User-Agent")
 
         return try await executeWithRetry(request: request)
     }
@@ -41,7 +41,7 @@ final class NetworkClient: @unchecked Sendable {
         request.httpMethod = "POST"
         request.setValue(apiKey, forHTTPHeaderField: "X-API-Key")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.setValue("ViaLinkSDK/1.0.5 iOS", forHTTPHeaderField: "User-Agent")
+        request.setValue("ViaLinkSDK/1.0.6 iOS", forHTTPHeaderField: "User-Agent")
         request.httpBody = try? JSONSerialization.data(withJSONObject: body)
 
         return try await executeWithRetry(request: request)

@@ -901,17 +901,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Escapable",
                 "printedName": "Escapable",
                 "usr": "s:s9EscapableP",
                 "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
               },
               {
                 "kind": "Conformance",
@@ -1103,17 +1103,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Error",
-            "printedName": "Error",
-            "usr": "s:s5ErrorP",
-            "mangledName": "$ss5ErrorP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
           },
           {
             "kind": "Conformance",
@@ -2178,6 +2178,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
@@ -2192,13 +2199,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -2210,6 +2210,2306 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ViaLinkCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ViaLinkDeepLinkDataObjC",
+        "printedName": "ViaLinkDeepLinkDataObjC",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "path",
+            "printedName": "path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLDeepLinkData(py)path",
+            "mangledName": "$s11ViaLinkCore0ab4DeepB8DataObjCC4pathSSvp",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLDeepLinkData(im)path",
+                "mangledName": "$s11ViaLinkCore0ab4DeepB8DataObjCC4pathSSvg",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "params",
+            "printedName": "params",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLDeepLinkData(py)params",
+            "mangledName": "$s11ViaLinkCore0ab4DeepB8DataObjCC6paramsSDyS2SGvp",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLDeepLinkData(im)params",
+                "mangledName": "$s11ViaLinkCore0ab4DeepB8DataObjCC6paramsSDyS2SGvg",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shortCode",
+            "printedName": "shortCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLDeepLinkData(py)shortCode",
+            "mangledName": "$s11ViaLinkCore0ab4DeepB8DataObjCC9shortCodeSSSgvp",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLDeepLinkData(im)shortCode",
+                "mangledName": "$s11ViaLinkCore0ab4DeepB8DataObjCC9shortCodeSSSgvg",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "linkId",
+            "printedName": "linkId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLDeepLinkData(py)linkId",
+            "mangledName": "$s11ViaLinkCore0ab4DeepB8DataObjCC6linkIdSo8NSNumberCSgvp",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLDeepLinkData(im)linkId",
+                "mangledName": "$s11ViaLinkCore0ab4DeepB8DataObjCC6linkIdSo8NSNumberCSgvg",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ViaLinkDeepLinkDataObjC",
+                "printedName": "ViaLinkCore.ViaLinkDeepLinkDataObjC",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLDeepLinkData"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLDeepLinkData(im)init",
+            "mangledName": "$s11ViaLinkCore0ab4DeepB8DataObjCCACycfc",
+            "moduleName": "ViaLinkCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ViaLinkCore@objc(cs)VLDeepLinkData",
+        "mangledName": "$s11ViaLinkCore0ab4DeepB8DataObjCC",
+        "moduleName": "ViaLinkCore",
+        "objc_name": "VLDeepLinkData",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ViaLinkDeferredErrorObjC",
+        "printedName": "ViaLinkDeferredErrorObjC",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLDeferredError(py)code",
+            "mangledName": "$s11ViaLinkCore0aB17DeferredErrorObjCC4codeSSvp",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLDeferredError(im)code",
+                "mangledName": "$s11ViaLinkCore0aB17DeferredErrorObjCC4codeSSvg",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLDeferredError(py)message",
+            "mangledName": "$s11ViaLinkCore0aB17DeferredErrorObjCC7messageSSvp",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLDeferredError(im)message",
+                "mangledName": "$s11ViaLinkCore0aB17DeferredErrorObjCC7messageSSvg",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "retryable",
+            "printedName": "retryable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLDeferredError(py)retryable",
+            "mangledName": "$s11ViaLinkCore0aB17DeferredErrorObjCC9retryableSbvp",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLDeferredError(im)retryable",
+                "mangledName": "$s11ViaLinkCore0aB17DeferredErrorObjCC9retryableSbvg",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ViaLinkDeferredErrorObjC",
+                "printedName": "ViaLinkCore.ViaLinkDeferredErrorObjC",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLDeferredError"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLDeferredError(im)init",
+            "mangledName": "$s11ViaLinkCore0aB17DeferredErrorObjCCACycfc",
+            "moduleName": "ViaLinkCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ViaLinkCore@objc(cs)VLDeferredError",
+        "mangledName": "$s11ViaLinkCore0aB17DeferredErrorObjCC",
+        "moduleName": "ViaLinkCore",
+        "objc_name": "VLDeferredError",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ViaLinkObjC",
+        "printedName": "ViaLinkObjC",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ViaLinkObjC",
+                "printedName": "ViaLinkCore.ViaLinkObjC",
+                "usr": "c:@M@ViaLinkCore@objc(cs)ViaLinkSDKObjC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ViaLinkCore@objc(cs)ViaLinkSDKObjC(cpy)shared",
+            "mangledName": "$s11ViaLinkCore0aB4ObjCC6sharedACvpZ",
+            "moduleName": "ViaLinkCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ViaLinkObjC",
+                    "printedName": "ViaLinkCore.ViaLinkObjC",
+                    "usr": "c:@M@ViaLinkCore@objc(cs)ViaLinkSDKObjC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)ViaLinkSDKObjC(cm)shared",
+                "mangledName": "$s11ViaLinkCore0aB4ObjCC6sharedACvgZ",
+                "moduleName": "ViaLinkCore",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(apiKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ViaLinkCore@objc(cs)ViaLinkSDKObjC(im)configureWithApiKey:",
+            "mangledName": "$s11ViaLinkCore0aB4ObjCC9configure6apiKeyySS_tF",
+            "moduleName": "ViaLinkCore",
+            "objc_name": "configureWithApiKey:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setWrapperInternal",
+            "printedName": "setWrapperInternal(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ViaLinkCore@objc(cs)ViaLinkSDKObjC(im)setWrapperInternal:",
+            "mangledName": "$s11ViaLinkCore0aB4ObjCC18setWrapperInternalyySSF",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDeepLink",
+            "printedName": "onDeepLink(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ViaLinkCore.ViaLinkDeepLinkDataObjC) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ViaLinkDeepLinkDataObjC",
+                    "printedName": "ViaLinkCore.ViaLinkDeepLinkDataObjC",
+                    "usr": "c:@M@ViaLinkCore@objc(cs)VLDeepLinkData"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ViaLinkCore@objc(cs)ViaLinkSDKObjC(im)onDeepLink:",
+            "mangledName": "$s11ViaLinkCore0aB4ObjCC06onDeepB0yyyAA0abfb4DataD1CCcF",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDeferredDeepLink",
+            "printedName": "onDeferredDeepLink(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ViaLinkCore.ViaLinkDeepLinkDataObjC?, ViaLinkCore.ViaLinkDeferredErrorObjC?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(ViaLinkCore.ViaLinkDeepLinkDataObjC?, ViaLinkCore.ViaLinkDeferredErrorObjC?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "ViaLinkCore.ViaLinkDeepLinkDataObjC?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ViaLinkDeepLinkDataObjC",
+                            "printedName": "ViaLinkCore.ViaLinkDeepLinkDataObjC",
+                            "usr": "c:@M@ViaLinkCore@objc(cs)VLDeepLinkData"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "ViaLinkCore.ViaLinkDeferredErrorObjC?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ViaLinkDeferredErrorObjC",
+                            "printedName": "ViaLinkCore.ViaLinkDeferredErrorObjC",
+                            "usr": "c:@M@ViaLinkCore@objc(cs)VLDeferredError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ViaLinkCore@objc(cs)ViaLinkSDKObjC(im)onDeferredDeepLink:",
+            "mangledName": "$s11ViaLinkCore0aB4ObjCC014onDeferredDeepB0yyyAA0abgb4DataD1CCSg_AA0abf5ErrorD1CCSgtcF",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleUniversalLink",
+            "printedName": "handleUniversalLink(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSUserActivity",
+                "printedName": "Foundation.NSUserActivity",
+                "usr": "c:objc(cs)NSUserActivity"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ViaLinkCore@objc(cs)ViaLinkSDKObjC(im)handleUniversalLink:",
+            "mangledName": "$s11ViaLinkCore0aB4ObjCC015handleUniversalB0ySbSo14NSUserActivityCF",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleURL",
+            "printedName": "handleURL(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ViaLinkCore@objc(cs)ViaLinkSDKObjC(im)handleURL:",
+            "mangledName": "$s11ViaLinkCore0aB4ObjCC9handleURLySb10Foundation0F0VF",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "track",
+            "printedName": "track(_:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ViaLinkCore@objc(cs)ViaLinkSDKObjC(im)track:data:",
+            "mangledName": "$s11ViaLinkCore0aB4ObjCC5track_4dataySS_SDyS2SGSgtF",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDeepLinkData",
+            "printedName": "getDeepLinkData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ViaLinkCore.ViaLinkDeepLinkDataObjC?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ViaLinkDeepLinkDataObjC",
+                    "printedName": "ViaLinkCore.ViaLinkDeepLinkDataObjC",
+                    "usr": "c:@M@ViaLinkCore@objc(cs)VLDeepLinkData"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ViaLinkCore@objc(cs)ViaLinkSDKObjC(im)getDeepLinkData",
+            "mangledName": "$s11ViaLinkCore0aB4ObjCC07getDeepB4DataAA0abfbgD1CCSgyF",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDeferredLinkData",
+            "printedName": "getDeferredLinkData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ViaLinkCore.ViaLinkDeepLinkDataObjC?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ViaLinkDeepLinkDataObjC",
+                    "printedName": "ViaLinkCore.ViaLinkDeepLinkDataObjC",
+                    "usr": "c:@M@ViaLinkCore@objc(cs)VLDeepLinkData"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ViaLinkCore@objc(cs)ViaLinkSDKObjC(im)getDeferredLinkData",
+            "mangledName": "$s11ViaLinkCore0aB4ObjCC011getDeferredB4DataAA0ab4DeepbgD1CCSgyF",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "awaitDeferredLinkData",
+            "printedName": "awaitDeferredLinkData(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ViaLinkCore.ViaLinkDeepLinkDataObjC?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(ViaLinkCore.ViaLinkDeepLinkDataObjC?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "ViaLinkCore.ViaLinkDeepLinkDataObjC?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ViaLinkDeepLinkDataObjC",
+                            "printedName": "ViaLinkCore.ViaLinkDeepLinkDataObjC",
+                            "usr": "c:@M@ViaLinkCore@objc(cs)VLDeepLinkData"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ViaLinkCore@objc(cs)ViaLinkSDKObjC(im)awaitDeferredLinkDataWithCompletion:",
+            "mangledName": "$s11ViaLinkCore0aB4ObjCC013awaitDeferredB4Data10completionyyAA0ab4DeepbgD1CCSg_s5Error_pSgtc_tF",
+            "moduleName": "ViaLinkCore",
+            "objc_name": "awaitDeferredLinkDataWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "awaitDeepLinkData",
+            "printedName": "awaitDeepLinkData(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ViaLinkCore.ViaLinkDeepLinkDataObjC?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(ViaLinkCore.ViaLinkDeepLinkDataObjC?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "ViaLinkCore.ViaLinkDeepLinkDataObjC?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ViaLinkDeepLinkDataObjC",
+                            "printedName": "ViaLinkCore.ViaLinkDeepLinkDataObjC",
+                            "usr": "c:@M@ViaLinkCore@objc(cs)VLDeepLinkData"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ViaLinkCore@objc(cs)ViaLinkSDKObjC(im)awaitDeepLinkDataWithCompletion:",
+            "mangledName": "$s11ViaLinkCore0aB4ObjCC09awaitDeepB4Data10completionyyAA0abfbgD1CCSg_s5Error_pSgtc_tF",
+            "moduleName": "ViaLinkCore",
+            "objc_name": "awaitDeepLinkDataWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "paymentInitiated",
+            "printedName": "paymentInitiated(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VLPaymentInitiatedArgs",
+                "printedName": "ViaLinkCore.VLPaymentInitiatedArgs",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ViaLinkCore.VLPaymentInitiatedResult?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(ViaLinkCore.VLPaymentInitiatedResult?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "ViaLinkCore.VLPaymentInitiatedResult?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "VLPaymentInitiatedResult",
+                            "printedName": "ViaLinkCore.VLPaymentInitiatedResult",
+                            "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedResult"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ViaLinkCore@objc(cs)ViaLinkSDKObjC(im)paymentInitiated:completion:",
+            "mangledName": "$s11ViaLinkCore0aB4ObjCC16paymentInitiated_10completionyAA09VLPaymentF4ArgsC_yAA0hF6ResultCSg_s5Error_pSgtctF",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ViaLinkCore@objc(cs)ViaLinkSDKObjC",
+        "mangledName": "$s11ViaLinkCore0aB4ObjCC",
+        "moduleName": "ViaLinkCore",
+        "objc_name": "ViaLinkSDKObjC",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VLPaymentInitiatedArgs",
+        "printedName": "VLPaymentInitiatedArgs",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "orderId",
+            "printedName": "orderId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs(py)orderId",
+            "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC7orderIdSSvp",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs(im)orderId",
+                "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC7orderIdSSvg",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "amount",
+            "printedName": "amount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs(py)amount",
+            "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC6amountSdvp",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs(im)amount",
+                "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC6amountSdvg",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currency",
+            "printedName": "currency",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs(py)currency",
+            "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC8currencySSvp",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs(im)currency",
+                "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC8currencySSvg",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "linkId",
+            "printedName": "linkId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs(py)linkId",
+            "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC6linkIdSo8NSNumberCSgvp",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs(im)linkId",
+                "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC6linkIdSo8NSNumberCSgvg",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs(im)setLinkId:",
+                "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC6linkIdSo8NSNumberCSgvs",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ViaLinkCore22VLPaymentInitiatedArgsC6linkIdSo8NSNumberCSgvM",
+                "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC6linkIdSo8NSNumberCSgvM",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "paymentMethod",
+            "printedName": "paymentMethod",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs(py)paymentMethod",
+            "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC13paymentMethodSSSgvp",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs(im)paymentMethod",
+                "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC13paymentMethodSSSgvg",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs(im)setPaymentMethod:",
+                "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC13paymentMethodSSSgvs",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ViaLinkCore22VLPaymentInitiatedArgsC13paymentMethodSSSgvM",
+                "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC13paymentMethodSSSgvM",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "metadata",
+            "printedName": "metadata",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs(py)metadata",
+            "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC8metadataSDyS2SGSgvp",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs(im)metadata",
+                "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC8metadataSDyS2SGSgvg",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs(im)setMetadata:",
+                "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC8metadataSDyS2SGSgvs",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ViaLinkCore22VLPaymentInitiatedArgsC8metadataSDyS2SGSgvM",
+                "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC8metadataSDyS2SGSgvM",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(orderId:amount:currency:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VLPaymentInitiatedArgs",
+                "printedName": "ViaLinkCore.VLPaymentInitiatedArgs",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs(im)initWithOrderId:amount:currency:",
+            "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC7orderId6amount8currencyACSS_SdSStcfc",
+            "moduleName": "ViaLinkCore",
+            "objc_name": "initWithOrderId:amount:currency:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VLPaymentInitiatedArgs",
+                "printedName": "ViaLinkCore.VLPaymentInitiatedArgs",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs(im)init",
+            "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsCACycfc",
+            "moduleName": "ViaLinkCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedArgs",
+        "mangledName": "$s11ViaLinkCore22VLPaymentInitiatedArgsC",
+        "moduleName": "ViaLinkCore",
+        "objc_name": "VLPaymentInitiatedArgs",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VLPaymentInitiatedResult",
+        "printedName": "VLPaymentInitiatedResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedResult(py)success",
+            "mangledName": "$s11ViaLinkCore24VLPaymentInitiatedResultC7successSbvp",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedResult(im)success",
+                "mangledName": "$s11ViaLinkCore24VLPaymentInitiatedResultC7successSbvg",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "paymentEventId",
+            "printedName": "paymentEventId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedResult(py)paymentEventId",
+            "mangledName": "$s11ViaLinkCore24VLPaymentInitiatedResultC14paymentEventIdSSvp",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedResult(im)paymentEventId",
+                "mangledName": "$s11ViaLinkCore24VLPaymentInitiatedResultC14paymentEventIdSSvg",
+                "moduleName": "ViaLinkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VLPaymentInitiatedResult",
+                "printedName": "ViaLinkCore.VLPaymentInitiatedResult",
+                "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedResult"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedResult(im)init",
+            "mangledName": "$s11ViaLinkCore24VLPaymentInitiatedResultCACycfc",
+            "moduleName": "ViaLinkCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ViaLinkCore@objc(cs)VLPaymentInitiatedResult",
+        "mangledName": "$s11ViaLinkCore24VLPaymentInitiatedResultC",
+        "moduleName": "ViaLinkCore",
+        "objc_name": "VLPaymentInitiatedResult",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -2345,8 +4645,8 @@
           },
           {
             "kind": "Function",
-            "name": "setWrapper",
-            "printedName": "setWrapper(_:)",
+            "name": "setWrapperInternal",
+            "printedName": "setWrapperInternal(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2361,8 +4661,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11ViaLinkCore0aB3SDKC10setWrapperyySSF",
-            "mangledName": "$s11ViaLinkCore0aB3SDKC10setWrapperyySSF",
+            "usr": "s:11ViaLinkCore0aB3SDKC18setWrapperInternalyySSF",
+            "mangledName": "$s11ViaLinkCore0aB3SDKC18setWrapperInternalyySSF",
             "moduleName": "ViaLinkCore",
             "declAttributes": [
               "Final",
@@ -2412,7 +4712,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(ViaLinkCore.DeepLinkData?) -> ()",
+                "printedName": "(ViaLinkCore.DeepLinkData) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2421,24 +4721,16 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "ViaLinkCore.DeepLinkData?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DeepLinkData",
-                        "printedName": "ViaLinkCore.DeepLinkData",
-                        "usr": "s:11ViaLinkCore04DeepB4DataV"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "DeepLinkData",
+                    "printedName": "ViaLinkCore.DeepLinkData",
+                    "usr": "s:11ViaLinkCore04DeepB4DataV"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:11ViaLinkCore0aB3SDKC06onDeepB0yyyAA0fB4DataVSgcF",
-            "mangledName": "$s11ViaLinkCore0aB3SDKC06onDeepB0yyyAA0fB4DataVSgcF",
+            "usr": "s:11ViaLinkCore0aB3SDKC06onDeepB0yyyAA0fB4DataVcF",
+            "mangledName": "$s11ViaLinkCore0aB3SDKC06onDeepB0yyyAA0fB4DataVcF",
             "moduleName": "ViaLinkCore",
             "declAttributes": [
               "Final",
@@ -2518,6 +4810,132 @@
           },
           {
             "kind": "Function",
+            "name": "getDeepLinkData",
+            "printedName": "getDeepLinkData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ViaLinkCore.DeepLinkData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeepLinkData",
+                    "printedName": "ViaLinkCore.DeepLinkData",
+                    "usr": "s:11ViaLinkCore04DeepB4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ViaLinkCore0aB3SDKC07getDeepB4DataAA0fbG0VSgyF",
+            "mangledName": "$s11ViaLinkCore0aB3SDKC07getDeepB4DataAA0fbG0VSgyF",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDeferredLinkData",
+            "printedName": "getDeferredLinkData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ViaLinkCore.DeepLinkData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeepLinkData",
+                    "printedName": "ViaLinkCore.DeepLinkData",
+                    "usr": "s:11ViaLinkCore04DeepB4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ViaLinkCore0aB3SDKC011getDeferredB4DataAA04DeepbG0VSgyF",
+            "mangledName": "$s11ViaLinkCore0aB3SDKC011getDeferredB4DataAA04DeepbG0VSgyF",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "awaitDeferredLinkData",
+            "printedName": "awaitDeferredLinkData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ViaLinkCore.DeepLinkData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeepLinkData",
+                    "printedName": "ViaLinkCore.DeepLinkData",
+                    "usr": "s:11ViaLinkCore04DeepB4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ViaLinkCore0aB3SDKC013awaitDeferredB4DataAA04DeepbG0VSgyYaKF",
+            "mangledName": "$s11ViaLinkCore0aB3SDKC013awaitDeferredB4DataAA04DeepbG0VSgyYaKF",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "awaitDeepLinkData",
+            "printedName": "awaitDeepLinkData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ViaLinkCore.DeepLinkData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeepLinkData",
+                    "printedName": "ViaLinkCore.DeepLinkData",
+                    "usr": "s:11ViaLinkCore04DeepB4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ViaLinkCore0aB3SDKC09awaitDeepB4DataAA0fbG0VSgyYaKF",
+            "mangledName": "$s11ViaLinkCore0aB3SDKC09awaitDeepB4DataAA0fbG0VSgyYaKF",
+            "moduleName": "ViaLinkCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "handleUniversalLink",
             "printedName": "handleUniversalLink(_:)",
             "children": [
@@ -2542,28 +4960,6 @@
               "Final",
               "AccessControl",
               "DiscardableResult",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "notifyAppLaunch",
-            "printedName": "notifyAppLaunch()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11ViaLinkCore0aB3SDKC15notifyAppLaunchyyF",
-            "mangledName": "$s11ViaLinkCore0aB3SDKC15notifyAppLaunchyyF",
-            "moduleName": "ViaLinkCore",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -3150,6 +5546,13 @@
               },
               {
                 "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Hashable",
                 "printedName": "Hashable",
                 "usr": "s:SH",
@@ -3182,13 +5585,6 @@
                 "printedName": "SendableMetatype",
                 "usr": "s:s16SendableMetatypeP",
                 "mangledName": "$ss16SendableMetatypeP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
               }
             ]
           },
@@ -3344,128 +5740,142 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/sungyonglee\/Dropbox\/project\/vialink-ios-sdk\/Sources\/ViaLinkCore\/EventTracker.swift",
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/EventTracker.swift",
       "kind": "Array",
       "offset": 274,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/sungyonglee\/Dropbox\/project\/vialink-ios-sdk\/Sources\/ViaLinkCore\/EventTracker.swift",
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/EventTracker.swift",
       "kind": "IntegerLiteral",
       "offset": 340,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/sungyonglee\/Dropbox\/project\/vialink-ios-sdk\/Sources\/ViaLinkCore\/EventTracker.swift",
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/EventTracker.swift",
       "kind": "IntegerLiteral",
       "offset": 976,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/sungyonglee\/Dropbox\/project\/vialink-ios-sdk\/Sources\/ViaLinkCore\/Internal\/NetworkClient.swift",
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/Internal\/NetworkClient.swift",
       "kind": "IntegerLiteral",
       "offset": 264,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/sungyonglee\/Dropbox\/project\/vialink-ios-sdk\/Sources\/ViaLinkCore\/Internal\/NetworkClient.swift",
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/Internal\/NetworkClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 1927,
+      "offset": 1929,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sungyonglee\/Dropbox\/project\/vialink-ios-sdk\/Sources\/ViaLinkCore\/Internal\/Storage.swift",
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/Internal\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 109,
       "length": 18,
       "value": "\"com.vialink.sdk.\""
     },
     {
-      "filePath": "\/Users\/sungyonglee\/Dropbox\/project\/vialink-ios-sdk\/Sources\/ViaLinkCore\/Models\/DeepLinkData.swift",
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/Models\/DeepLinkData.swift",
       "kind": "Dictionary",
       "offset": 623,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/sungyonglee\/Dropbox\/project\/vialink-ios-sdk\/Sources\/ViaLinkCore\/Models\/DeferredError.swift",
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/Models\/DeferredError.swift",
       "kind": "StringLiteral",
       "offset": 1019,
       "length": 14,
       "value": "\"server_error\""
     },
     {
-      "filePath": "\/Users\/sungyonglee\/Dropbox\/project\/vialink-ios-sdk\/Sources\/ViaLinkCore\/Models\/DeferredError.swift",
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/Models\/DeferredError.swift",
       "kind": "StringLiteral",
       "offset": 1065,
       "length": 18,
       "value": "\"invalid_response\""
     },
     {
-      "filePath": "\/Users\/sungyonglee\/Dropbox\/project\/vialink-ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
       "kind": "StringLiteral",
       "offset": 999,
-      "length": 7,
-      "value": "\"3.2.0\""
+      "length": 8,
+      "value": "\"3.0.10\""
     },
     {
-      "filePath": "\/Users\/sungyonglee\/Dropbox\/project\/vialink-ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1213,
+      "offset": 1214,
       "length": 21,
       "value": "\"https:\/\/vialink.app\""
     },
     {
-      "filePath": "\/Users\/sungyonglee\/Dropbox\/project\/vialink-ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1618,
+      "offset": 1619,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/sungyonglee\/Dropbox\/project\/vialink-ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1681,
+      "offset": 1682,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/sungyonglee\/Dropbox\/project\/vialink-ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1685,
+      "offset": 1686,
       "length": 13,
       "value": "1000000000"
     },
     {
-      "filePath": "\/Users\/sungyonglee\/Dropbox\/project\/vialink-ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1891,
+      "offset": 1892,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sungyonglee\/Dropbox\/project\/vialink-ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 2657,
+      "offset": 2358,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sungyonglee\/Dropbox\/project\/vialink-ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
+      "kind": "Array",
+      "offset": 2704,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
+      "kind": "Array",
+      "offset": 3140,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
       "kind": "StringLiteral",
-      "offset": 18386,
+      "offset": 20614,
       "length": 8,
       "value": "\"static\""
     },
     {
-      "filePath": "\/Users\/sungyonglee\/Dropbox\/project\/vialink-ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
+      "filePath": "\/Users\/hong\/sources\/vialink-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21834,
+      "offset": 24062,
       "length": 26,
       "value": "\"^[A-Za-z0-9_\\-]{1,100}$\""
     }

@@ -19,37 +19,118 @@ URL: https://github.com/aresjoydev/vialink-ios-sdk
 
 ## 사용법
 
+### 1. 초기화 및 수신
+
 ```swift
 import ViaLinkCore
 
-// 초기화
-ViaLinkSDK.shared.configure(apiKey: "YOUR_API_KEY")
+@main
+struct iosApp: App {
+    init() {
+        ViaLinkSDK.shared.configure(apiKey: "YOUR_API_KEY")
+    }
 
-// 딥링크 콜백
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+                .onOpenURL { url in
+                    // Custom URL Scheme 수신
+                    ViaLinkSDK.shared.handleURL(url)
+                }
+                .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { userActivity in
+                    // Universal Link 수신
+                    ViaLinkSDK.shared.handleUniversalLink(userActivity)
+                }
+        }
+    }
+}
+```
+
+### 2. 딥링크 콜백
+
+```swift
+// Universal Link / 커스텀 스킴 수신
 ViaLinkSDK.shared.onDeepLink { data in
     print("경로: \(data.path)")
     print("파라미터: \(data.params)")
 }
 
-// 디퍼드 딥링크 콜백
-ViaLinkSDK.shared.onDeferredDeepLink { data in
-    print("디퍼드: \(data.path)")
+// 디퍼드 딥링크 (첫 설치 후 매칭)
+ViaLinkSDK.shared.onDeferredDeepLink { data, error in
+    if let error = error {
+        print("매칭 실패: \(error.message)")
+        return
+    }
+    if let data = data {
+        print("디퍼드: \(data.path)")
+    } else {
+        print("매칭 결과 없음 (Organic)")
+    }
 }
+```
 
-// 이벤트 추적
+### 3. Pull API
+
+```swift
+// 동기 (캐시된 값 즉시 반환)
+let deepLink = ViaLinkSDK.shared.getDeepLinkData()
+let deferred = ViaLinkSDK.shared.getDeferredLinkData()
+
+// 비동기 (결과 도착까지 대기)
+Task {
+    let deepLinkAsync = try? await ViaLinkSDK.shared.awaitDeepLinkData()    // 3초 타임아웃
+    let deferredAsync = try? await ViaLinkSDK.shared.awaitDeferredLinkData() // 결과까지 대기
+}
+```
+
+### 4. 이벤트 추적
+
+```swift
 ViaLinkSDK.shared.track("purchase", data: [
     "product_id": "12345",
-    "revenue": "29900"
+    "revenue": "29900",
+    "currency": "KRW"
 ])
+```
 
-// 링크 생성
-let shortUrl = try await ViaLinkSDK.shared.createLink(
-    path: "/product/12345",
-    data: ["promo_code": "FRIEND_SHARE"],
-    campaign: "referral"
-)
+### 5. 결제 추적
+
+```swift
+Task {
+    do {
+        let result = try await ViaLinkSDK.shared.payment.initiated(
+            PaymentInitiatedArgs(
+                orderId: "ORDER-1234",
+                amount: 29900,
+                currency: "KRW",
+                paymentMethod: "apple_pay"
+            )
+        )
+        print("Success: \(result.success), EventId: \(result.paymentEventId)")
+    } catch {
+        print("Payment Error: \(error.localizedDescription)")
+    }
+}
+```
+
+### 6. 링크 생성
+
+```swift
+Task {
+    do {
+        let url = try await ViaLinkSDK.shared.createLink(
+            path: "/product/12345",
+            data: ["promo_code": "FRIEND_SHARE"],
+            campaign: "referral",
+            linkType: "dynamic" // 클릭 추적 필요 시
+        )
+        print("생성된 링크: \(url)")
+    } catch {
+        print("생성 실패: \(error.localizedDescription)")
+    }
+}
 ```
 
 ## 문서
 
-- [SDK 가이드](https://docs.vialink.app)
+- [SDK 가이드](https://docs.vialink.app/sdk/ios)

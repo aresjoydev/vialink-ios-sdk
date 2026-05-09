@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name ViaLinkCore -package-name ios_sdk
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -module-name ViaLinkCore -package-name ios_sdk
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
 import CoreTelephony
 import Foundation
 import Network
@@ -15,9 +15,7 @@ public struct DeepLinkData : Swift.Sendable {
   public let params: [Swift.String : Swift.String]
   public let shortCode: Swift.String?
   public let linkId: Swift.Int?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(path: Swift.String, params: [Swift.String : Swift.String] = [:], shortCode: Swift.String? = nil, linkId: Swift.Int? = nil)
-  #endif
 }
 public struct DeferredError : Swift.Error, Swift.Sendable, Swift.Equatable {
   public let code: ViaLinkCore.DeferredError.Code
@@ -30,17 +28,13 @@ public struct DeferredError : Swift.Error, Swift.Sendable, Swift.Equatable {
     case serverError
     case invalidResponse
     case unknown
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
     }
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(code: ViaLinkCore.DeferredError.Code, message: Swift.String, httpStatus: Swift.Int? = nil, retryable: Swift.Bool)
-  #endif
   public var localizedDescription: Swift.String {
     get
   }
@@ -53,9 +47,7 @@ public struct PaymentInitiatedArgs : Swift.Sendable {
   public let linkId: Swift.Int?
   public let paymentMethod: Swift.String?
   public let metadata: [Swift.String : Swift.String]?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(orderId: Swift.String, amount: Swift.Double, currency: Swift.String, linkId: Swift.Int? = nil, paymentMethod: Swift.String? = nil, metadata: [Swift.String : Swift.String]? = nil)
-  #endif
 }
 public struct PaymentInitiatedResult : Swift.Sendable {
   public let success: Swift.Bool
@@ -69,11 +61,9 @@ public enum PaymentError : Swift.Error, Foundation.LocalizedError, Swift.Sendabl
   case sdkNotInitialized
   case invalidResponse
   case networkFailure(Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
   public static func == (lhs: ViaLinkCore.PaymentError, rhs: ViaLinkCore.PaymentError) -> Swift.Bool
 }
 @_hasMissingDesignatedInitializers @objc(VLDeepLinkData) public class ViaLinkDeepLinkDataObjC : ObjectiveC.NSObject, @unchecked Swift.Sendable {
@@ -94,29 +84,15 @@ public enum PaymentError : Swift.Error, Foundation.LocalizedError, Swift.Sendabl
   @objc public func configure(apiKey: Swift.String)
   @objc public func setWrapperInternal(_ wrapper: Swift.String)
   @objc public func onDeepLink(_ handler: @escaping (ViaLinkCore.ViaLinkDeepLinkDataObjC) -> Swift.Void)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func onDeferredDeepLink(_ handler: @escaping (ViaLinkCore.ViaLinkDeepLinkDataObjC?, ViaLinkCore.ViaLinkDeferredErrorObjC?) -> Swift.Void)
-  #endif
   @objc public func handleUniversalLink(_ userActivity: Foundation.NSUserActivity) -> Swift.Bool
   @objc public func handleURL(_ url: Foundation.URL) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func track(_ eventName: Swift.String, data: [Swift.String : Swift.String]? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getDeepLinkData() -> ViaLinkCore.ViaLinkDeepLinkDataObjC?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getDeferredLinkData() -> ViaLinkCore.ViaLinkDeepLinkDataObjC?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func awaitDeferredLinkData(completion: @escaping (ViaLinkCore.ViaLinkDeepLinkDataObjC?, (any Swift.Error)?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func awaitDeepLinkData(completion: @escaping (ViaLinkCore.ViaLinkDeepLinkDataObjC?, (any Swift.Error)?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func paymentInitiated(_ args: ViaLinkCore.VLPaymentInitiatedArgs, completion: @escaping (ViaLinkCore.VLPaymentInitiatedResult?, (any Swift.Error)?) -> Swift.Void)
-  #endif
   @objc deinit
 }
 @objc(VLPaymentInitiatedArgs) public class VLPaymentInitiatedArgs : ObjectiveC.NSObject, @unchecked Swift.Sendable {
@@ -140,39 +116,23 @@ public enum PaymentError : Swift.Error, Foundation.LocalizedError, Swift.Sendabl
   final public func setWrapperInternal(_ wrapper: Swift.String)
   final public func configure(apiKey: Swift.String)
   final public func onDeepLink(_ handler: @escaping (ViaLinkCore.DeepLinkData) -> Swift.Void)
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func onDeferredDeepLink(_ handler: @escaping (ViaLinkCore.DeepLinkData?, ViaLinkCore.DeferredError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getDeepLinkData() -> ViaLinkCore.DeepLinkData?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getDeferredLinkData() -> ViaLinkCore.DeepLinkData?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func awaitDeferredLinkData() async throws -> ViaLinkCore.DeepLinkData?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func awaitDeepLinkData() async throws -> ViaLinkCore.DeepLinkData?
-  #endif
   @discardableResult
   final public func handleUniversalLink(_ userActivity: Foundation.NSUserActivity) -> Swift.Bool
   @discardableResult
   final public func handleURL(_ url: Foundation.URL) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func track(_ eventName: Swift.String, data: [Swift.String : Swift.String]? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func createLink(path: Swift.String, data: [Swift.String : Swift.String]? = nil, campaign: Swift.String? = nil, linkType: Swift.String = "static", iosUrl: Swift.String? = nil, androidUrl: Swift.String? = nil, webUrl: Swift.String? = nil, ogTitle: Swift.String? = nil, ogDescription: Swift.String? = nil, ogImageUrl: Swift.String? = nil, channel: Swift.String? = nil, feature: Swift.String? = nil, tags: [Swift.String]? = nil, expiresAt: Swift.String? = nil) async throws -> Swift.String
-  #endif
   public enum CreateLinkError : Swift.Error, Foundation.LocalizedError {
     case notConfigured
     case invalidResponse
-    #if compiler(>=5.3) && $NonescapableTypes
     public var errorDescription: Swift.String? {
       get
     }
-    #endif
     public static func == (a: ViaLinkCore.ViaLinkSDK.CreateLinkError, b: ViaLinkCore.ViaLinkSDK.CreateLinkError) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {

@@ -2,6 +2,14 @@
 
 ViaLink 딥링크 인프라 서비스를 위한 iOS SDK입니다.
 
+## 특징
+
+- **딥링크 라우팅** — Universal Links / Custom URL Scheme 자동 처리
+- **디퍼드 딥링킹** — 앱 설치 후 첫 실행 시 핑거프린트 기반 매칭
+- **이벤트 추적** — 커스텀 이벤트 배치 전송
+- **결제 어트리뷰션** — 결제 시도 기록 + 자동 link_id 첨부
+- **링크 생성** — 앱 내에서 딥링크 생성 (static/dynamic)
+
 ## 요구사항
 
 - iOS 15.0+
@@ -131,6 +139,14 @@ Task {
 }
 ```
 
+## 샘플 프로젝트
+
+`sample/` 디렉토리에서 실행 가능한 Xcode 샘플 프로젝트를 확인하세요.
+
 ## 문서
 
 - [SDK 가이드](https://docs.vialink.app/sdk/ios)
+
+## 라이선스
+
+MIT License — Aresjoy Inc.

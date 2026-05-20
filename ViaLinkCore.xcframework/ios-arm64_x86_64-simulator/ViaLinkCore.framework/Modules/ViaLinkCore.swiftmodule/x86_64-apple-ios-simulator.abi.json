@@ -5807,7 +5807,7 @@
       "kind": "StringLiteral",
       "offset": 999,
       "length": 8,
-      "value": "\"3.0.16\""
+      "value": "\"3.0.17\""
     },
     {
       "filePath": "\/Users\/hong\/sources\/vialink_claude\/vialink-p-manager\/sdk\/ios-sdk\/Sources\/ViaLinkCore\/ViaLinkSDK.swift",

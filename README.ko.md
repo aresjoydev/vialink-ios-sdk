@@ -1,24 +1,24 @@
 # ViaLink iOS SDK
 
-**English** | [한국어](README.ko.md)
+[English](README.md) | **한국어**
 
-iOS SDK for the ViaLink deep link infrastructure service.
+ViaLink 딥링크 인프라 서비스를 위한 iOS SDK입니다.
 
-## Features
+## 특징
 
-- **Deep link routing** — automatic handling of Universal Links / Custom URL Schemes
-- **Deferred deep linking** — fingerprint-based matching on the first launch after install
-- **Event tracking** — batched delivery of custom events
-- **Payment attribution** — records payment attempts and automatically attaches `link_id`
-- **Link creation** — generate deep links from within the app (static/dynamic)
+- **딥링크 라우팅** — Universal Links / Custom URL Scheme 자동 처리
+- **디퍼드 딥링킹** — 앱 설치 후 첫 실행 시 핑거프린트 기반 매칭
+- **이벤트 추적** — 커스텀 이벤트 배치 전송
+- **결제 어트리뷰션** — 결제 시도 기록 + 자동 link_id 첨부
+- **링크 생성** — 앱 내에서 딥링크 생성 (static/dynamic)
 
-## Requirements
+## 요구사항
 
 - iOS 15.0+
 - Swift 5.9+
 - Xcode 15+
 
-## Installation
+## 설치
 
 ### Swift Package Manager
 
@@ -27,9 +27,9 @@ Xcode > File > Add Package Dependencies
 URL: https://github.com/aresjoydev/vialink-ios-sdk
 ```
 
-## Usage
+## 사용법
 
-### 1. Initialization and receiving links
+### 1. 초기화 및 수신
 
 ```swift
 import ViaLinkCore
@@ -44,11 +44,11 @@ struct iosApp: App {
         WindowGroup {
             ContentView()
                 .onOpenURL { url in
-                    // Receive a Custom URL Scheme
+                    // Custom URL Scheme 수신
                     ViaLinkSDK.shared.handleURL(url)
                 }
                 .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { userActivity in
-                    // Receive a Universal Link
+                    // Universal Link 수신
                     ViaLinkSDK.shared.handleUniversalLink(userActivity)
                 }
         }
@@ -56,25 +56,25 @@ struct iosApp: App {
 }
 ```
 
-### 2. Deep link callbacks
+### 2. 딥링크 콜백
 
 ```swift
-// Receive Universal Links / custom schemes
+// Universal Link / 커스텀 스킴 수신
 ViaLinkSDK.shared.onDeepLink { data in
-    print("path: \(data.path)")
-    print("params: \(data.params)")
+    print("경로: \(data.path)")
+    print("파라미터: \(data.params)")
 }
 
-// Deferred deep link (matched after the first install)
+// 디퍼드 딥링크 (첫 설치 후 매칭)
 ViaLinkSDK.shared.onDeferredDeepLink { data, error in
     if let error = error {
-        print("match failed: \(error.message)")
+        print("매칭 실패: \(error.message)")
         return
     }
     if let data = data {
-        print("deferred: \(data.path)")
+        print("디퍼드: \(data.path)")
     } else {
-        print("no match (organic)")
+        print("매칭 결과 없음 (Organic)")
     }
 }
 ```
@@ -82,18 +82,18 @@ ViaLinkSDK.shared.onDeferredDeepLink { data, error in
 ### 3. Pull API
 
 ```swift
-// Synchronous (returns the cached value immediately)
+// 동기 (캐시된 값 즉시 반환)
 let deepLink = ViaLinkSDK.shared.getDeepLinkData()
 let deferred = ViaLinkSDK.shared.getDeferredLinkData()
 
-// Asynchronous (waits until the result arrives)
+// 비동기 (결과 도착까지 대기)
 Task {
-    let deepLinkAsync = try? await ViaLinkSDK.shared.awaitDeepLinkData()    // 3-second timeout
-    let deferredAsync = try? await ViaLinkSDK.shared.awaitDeferredLinkData() // first launch: waits for the match result / later launches: returns nil immediately
+    let deepLinkAsync = try? await ViaLinkSDK.shared.awaitDeepLinkData()    // 3초 타임아웃
+    let deferredAsync = try? await ViaLinkSDK.shared.awaitDeferredLinkData() // 첫 실행: 매칭 결과까지 대기 / 이후 실행: 즉시 nil
 }
 ```
 
-### 4. Event tracking
+### 4. 이벤트 추적
 
 ```swift
 ViaLinkSDK.shared.track("purchase", data: [
@@ -103,7 +103,7 @@ ViaLinkSDK.shared.track("purchase", data: [
 ])
 ```
 
-### 5. Payment tracking
+### 5. 결제 추적
 
 ```swift
 Task {
@@ -123,7 +123,7 @@ Task {
 }
 ```
 
-### 6. Link creation
+### 6. 링크 생성
 
 ```swift
 Task {
@@ -132,23 +132,23 @@ Task {
             path: "/product/12345",
             data: ["promo_code": "FRIEND_SHARE"],
             campaign: "referral",
-            linkType: "dynamic" // when click tracking is needed
+            linkType: "dynamic" // 클릭 추적 필요 시
         )
-        print("created link: \(url)")
+        print("생성된 링크: \(url)")
     } catch {
-        print("creation failed: \(error.localizedDescription)")
+        print("생성 실패: \(error.localizedDescription)")
     }
 }
 ```
 
-## Sample project
+## 샘플 프로젝트
 
-See the runnable Xcode sample project in the `sample/ViaLinkSample/` directory.
+`sample/ViaLinkSample/` 디렉토리에서 실행 가능한 Xcode 샘플 프로젝트를 확인하세요.
 
-## Documentation
+## 문서
 
-- [SDK Guide](https://docs.vialink.app/sdk/ios)
+- [SDK 가이드](https://docs.vialink.app/sdk/ios)
 
-## License
+## 라이선스
 
 MIT License — Aresjoy Inc.

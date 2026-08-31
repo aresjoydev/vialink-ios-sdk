@@ -1,8 +1,21 @@
 # ViaLink iOS SDK
 
+[![ViaLink — Deep links for 6 platforms. Start free.](docs/banner-en.png)](https://vialink.app)
+
 **English** | [한국어](README.ko.md)
 
 iOS SDK for the ViaLink deep link infrastructure service.
+
+One link routes automatically across iOS, Android, and Web. When the app is not
+installed, the user is sent to the App Store and still lands on the intended screen on
+first launch (deferred deep linking). Click, install, open, event, and payment all flow
+through a single attribution pipeline.
+
+Unlike most deep link and attribution tools, which require a sales call and an annual
+contract, **ViaLink is free to start.** No credit card — all six platform SDKs are
+available the moment you sign up.
+
+**→ [vialink.app](https://vialink.app)**
 
 ## Features
 

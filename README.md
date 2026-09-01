@@ -160,7 +160,7 @@ See the runnable Xcode sample project in the `sample/ViaLinkSample/` directory.
 
 ## Documentation
 
-- [SDK Guide](https://docs.vialink.app/sdk/ios)
+- [SDK Guide](https://docs.vialink.app/#sdk-ios-install)
 
 ## License
 

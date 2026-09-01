@@ -158,7 +158,7 @@ Task {
 
 ## 문서
 
-- [SDK 가이드](https://docs.vialink.app/sdk/ios)
+- [SDK 가이드](https://docs.vialink.app/#sdk-ios-install)
 
 ## 라이선스
 
